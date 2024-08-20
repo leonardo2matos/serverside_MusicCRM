@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Music CRM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>MusicCRM</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Descobrir</a></li>
+            <li><a href="#">Bandas</a></li>
+            <li><a href="#">Álbuns</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div> <!-- Ícone do menu para mobile -->
+    </nav>
+    
+
+    <!-- Seção de Destaque -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h2>King Gizzard & the Lizard Wizard</h2>
+            <p>Descubra o novo álbum "Flight b741" com lançamento exclusivo.</p>
+            <button class="cta-button">Ouça Agora</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/King-Gizzard-1719878252-1000x1000.jpg" alt="King Gizzard & the Lizard Wizard">
+        </div>
+    </header>
+
+    <!-- Galeria de Lançamentos -->
+    <section class="releases">
+        <h2>Lançamentos Recentes</h2>
+        <div class="release-gallery">
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel">
+                <div class="release-item">
+                    <img src="images/SOM778-ANCIIENTS-BEYOND-THE-REACH-OF-THE-SUN-3000x3000px-300DPI-RGB1-500x500.jpg" alt="Álbum 1">
+                    <h3>Beyond the Reach of the Sun </h3>
+                    <p>Anciients</p>
+                </div>
+                <div class="release-item">
+                    <img src="images/better-lovers-highly-irresponsible-artwork.webp" alt="Álbum 2">
+                    <h3>Highly Irresponsible </h3>
+                    <p>Better Lovers</p>
+                </div>
+                <div class="release-item">
+                    <img src="images/psychlona.jpg" alt="Álbum 3">
+                    <h3>Warded Vision</h3>
+                    <p>Psychona </p>
+                </div>
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+    
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 MusicCRM. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

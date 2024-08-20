@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Music CRM</title>
+    <link rel="stylesheet" href="./Home - Music CRM_files/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>MusicCRM</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5500/index.html#">Início</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#">Descobrir</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#">Bandas</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#">Álbuns</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#">Login</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">☰</div> <!-- Ícone do menu para mobile -->
+    </nav>
+    
+
+    <!-- Seção de Destaque -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h2>Banda em Destaque: Nome da Banda</h2>
+            <p>Descubra o novo álbum "Nome do Álbum" com lançamento exclusivo.</p>
+            <button class="cta-button">Ouça Agora</button>
+        </div>
+        <div class="hero-image">
+            <img src="./Home - Music CRM_files/carcass-torn-arteries-cd-novo-lacrado-442195.webp" alt="Banda Destaque">
+        </div>
+    </header>
+
+    <!-- Galeria de Lançamentos -->
+    <section class="releases">
+        <h2>Lançamentos Recentes</h2>
+        <div class="release-gallery">
+            <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+            <div class="carousel" style="transform: translateX(0px);">
+                <div class="release-item">
+                    <img src="./Home - Music CRM_files/album1.jpg" alt="Álbum 1">
+                    <h3>Álbum 1</h3>
+                    <p>Banda 1</p>
+                </div>
+                <div class="release-item">
+                    <img src="./Home - Music CRM_files/album2.jpg" alt="Álbum 2">
+                    <h3>Álbum 2</h3>
+                    <p>Banda 2</p>
+                </div>
+                <div class="release-item">
+                    <img src="./Home - Music CRM_files/album3.jpg" alt="Álbum 3">
+                    <h3>Álbum 3</h3>
+                    <p>Banda 3</p>
+                </div>
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+            <button class="carousel-control next" onclick="nextSlide()">❯</button>
+        </div>
+    </section>
+    
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>© 2024 MusicCRM. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./Home - Music CRM_files/script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
